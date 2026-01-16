@@ -142,11 +142,18 @@
 
   .container {
     position: relative;
+    gap: 1rem;
   }
 
   .logo {
     font-size: 1.3rem;
     letter-spacing: 2px;
+    flex: 1;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 102;
   }
 
   .hamburger {
@@ -161,23 +168,29 @@
     background: linear-gradient(135deg, var(--primary) 0%, #081528 100%);
     flex-direction: column;
     gap: 0;
-    padding: 1.5rem;
+    padding: 0;
     border-top: 1px solid rgba(233, 69, 96, 0.2);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease, padding 0.4s ease;
     justify-content: flex-start;
+    visibility: hidden;
+    z-index: 99;
   }
 
   .nav.navActive {
     max-height: 500px;
+    padding: 1.5rem;
+    visibility: visible;
   }
 
   .nav a {
     font-size: 1rem;
     padding: 0.8rem 0;
     border-bottom: 1px solid rgba(233, 69, 96, 0.1);
+    color: white;
+    text-decoration: none;
   }
 
   .nav a::after {
@@ -199,6 +212,7 @@
     margin-top: 0.5rem;
     text-align: center;
     font-size: 0.95rem;
+    text-decoration: none;
   }
 
   .inquiryBtnMobile:hover {
