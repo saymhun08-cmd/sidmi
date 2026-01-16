@@ -25,7 +25,7 @@ export default function Footer() {
         
         <div className={styles.section}>
           <h4>Contact</h4>
-          <p>Email: info@sidmi.com</p>
+          <p>Email: info@sidmi.org</p>
           <p>Phone: +971522391904</p>
           <p>Location: Remote Work Through World</p>
         </div>

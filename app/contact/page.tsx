@@ -82,8 +82,8 @@ export default function Contact() {
               <div className={styles.infoIcon}><MdEmail size={32} /></div>
               <div>
                 <h4>Email</h4>
-                <p>info@sidmi.com</p>
-                <p>support@sidmi.com</p>
+                <p>info@sidmi.org</p>
+               
               </div>
             </div>
 
