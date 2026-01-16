@@ -1,0 +1,325 @@
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #0a1f3a 50%, var(--primary) 100%);
+  color: white;
+  padding: 8rem 2rem;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(233, 69, 96, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(233, 69, 96, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  animation: slideInLeft 0.8s ease-out;
+  background: linear-gradient(90deg, white 0%, #e8e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content p {
+  font-size: 1.25rem;
+  color: #d0d0e0;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  max-width: 550px;
+  animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  animation: slideInLeft 0.8s ease-out 0.4s both;
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--secondary) 0%, #d63f52 100%);
+  color: white;
+  padding: 1.2rem 2.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.cta:hover {
+  background: linear-gradient(135deg, #d63f52 0%, var(--secondary) 100%);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(233, 69, 96, 0.5);
+}
+
+.ctaSecondary {
+  display: inline-block;
+  color: white;
+  padding: 1.2rem 2.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.ctaSecondary:hover {
+  border-color: var(--secondary);
+  background: rgba(233, 69, 96, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(233, 69, 96, 0.3);
+}
+
+.highlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  animation: slideInRight 0.8s ease-out 0.3s both;
+}
+
+.stat {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  padding: 2.8rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border-left: 4px solid var(--secondary);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(233, 69, 96, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.stat:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+  transform: translateY(-8px);
+  border-left-color: var(--secondary);
+  box-shadow: 0 20px 50px rgba(233, 69, 96, 0.2);
+}
+
+.stat:hover::before {
+  opacity: 1;
+}
+
+.stat h3 {
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, var(--secondary), #ff6b8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.stat p {
+  color: #d0d0e0;
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem;
+    min-height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  .content p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .highlight {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaGroup {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .cta, .ctaSecondary {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .stat {
+    padding: 1.5rem;
+  }
+
+  .stat h3 {
+    font-size: 2rem;
+  }
+
+  .hero::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero::after {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 1rem;
+    min-height: 500px;
+  }
+
+  .content h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stat {
+    padding: 1.2rem;
+  }
+
+  .stat h3 {
+    font-size: 1.6rem;
+  }
+
+  .stat p {
+    font-size: 0.8rem;
+  }
+
+  .cta, .ctaSecondary {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}

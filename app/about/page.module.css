@@ -1,0 +1,382 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #081528 0%, var(--primary) 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(233, 69, 96, 0.3);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.mission {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, rgba(233, 69, 96, 0.05) 0%, #ffffff 100%);
+}
+
+.missionContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.missionContent h2 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.missionContent p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.values {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, rgba(233, 69, 96, 0.02), transparent);
+}
+
+.values h2 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(233, 69, 96, 0.15);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 1rem;
+  color: #081528;
+  font-weight: 600;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.achievements {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #081528 0%, var(--primary) 100%);
+  color: white;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievementCard {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.achievementCard:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.achievementCard h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 1rem;
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.achievementCard p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #081528 0%, var(--primary) 100%);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat {
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stat:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.stat p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-size: 1rem;
+}
+
+.ceoSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, rgba(233, 69, 96, 0.02), transparent);
+}
+
+.ceoContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ceoContent h2 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.ceoCard {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ceoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(233, 69, 96, 0.15);
+}
+
+.ceoAvatar {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.ceoCard h3 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  color: #081528;
+  font-weight: 700;
+}
+
+.ceoTitle {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ceoBio {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .mission {
+    padding: 3rem 1.5rem;
+  }
+
+  .missionContent h2 {
+    font-size: 1.8rem;
+  }
+
+  .missionContent p {
+    font-size: 0.95rem;
+  }
+
+  .values h2 {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements h2 {
+    font-size: 1.8rem;
+  }
+
+  .achievementsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ceoSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .ceoContent h2 {
+    font-size: 1.8rem;
+  }
+
+  .ceoCard {
+    padding: 2rem;
+  }
+
+  .ceoAvatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ceoCard h3 {
+    font-size: 1.5rem;
+  }
+
+  .ceoBio {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .missionContent h2 {
+    font-size: 1.4rem;
+  }
+
+  .values h2,
+  .achievements h2 {
+    font-size: 1.4rem;
+  }
+
+  .card,
+  .achievementCard {
+    padding: 1.5rem;
+  }
+
+  .card h3,
+  .achievementCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .ceoContent h2 {
+    font-size: 1.4rem;
+  }
+
+  .ceoCard {
+    padding: 1.5rem;
+  }
+
+  .ceoCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .ceoAvatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ceoBio {
+    font-size: 0.9rem;
+  }
+}

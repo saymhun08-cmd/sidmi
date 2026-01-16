@@ -1,0 +1,151 @@
+.section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #081528 0%, var(--primary) 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, white, var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #d0d0e0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+  border-left: 5px solid var(--secondary);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: rgba(233, 69, 96, 0.1);
+  border-color: var(--secondary);
+}
+
+.stars {
+  color: #FFB800;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.quote {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #d0d0e0;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.role {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0;
+}
+
+.company {
+  color: #a0a0b0;
+  font-size: 0.85rem;
+  margin: 0.2rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.9rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .role {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .header h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .quote {
+    font-size: 0.9rem;
+  }
+
+  .stars {
+    font-size: 1rem;
+  }
+}
